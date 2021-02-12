@@ -3,6 +3,7 @@
 
 [![NPM Package](https://img.shields.io/npm/v/@open-containers-manager/cli)](https://www.npmjs.com/package/@open-containers-manager/cli)
 [![Travis CI](https://img.shields.io/travis/open-containers-manager/cli)](https://travis-ci.org/open-containers-manager/cli)
+![Codacy grade](https://img.shields.io/codacy/grade/8631948afb394a5c803eabd93a96df26)
 [![License](https://img.shields.io/github/license/open-containers-manager/cli)](https://github.com/open-containers-manager/cli/blob/master/LICENSE)
 
 ## Features
