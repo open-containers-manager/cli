@@ -109,7 +109,10 @@ export default class Monitoring extends EventEmitter {
       .then((containersInfo) => pAll(
         containersInfo.map((container) => () => {
           const id = container.Id;
-          const ports = container.NetworkSettings.Ports.map((forward) => forward.hostPort);
+          const ports = Object.keys(container.NetworkSettings.Ports)
+            .map((port) => container.NetworkSettings.Ports[port])
+            .flat()
+            .map((forward) => forward.HostPort);
 
           return pAll(
             ports.map((port) => () => {
